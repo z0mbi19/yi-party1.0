@@ -40,15 +40,15 @@ function App() {
           <div className="row" >
             <div className="col-4" >
               <p>Comodicou a minha página?</p>
-              <button type="button" class="btn btn-secondary btn-vizualizar">Primary</button>
+              <button type="button" class="btn btn-secondary btn-vizualizar">PRÉ-VIZUALIZAR</button>
             </div>
             <div className="col-4" >
               <p>Deixar para publicar mais tarde</p>
-              <button type="button" class="btn btn-secondary btn-rascunho">Primary</button>
+              <button type="button" class="btn btn-secondary btn-rascunho">SALVAR COMO RASCUNHO</button>
             </div>
             <div className="col-4" >
               <p>Quero públicá-lo agora!</p>
-              <button type="button" class="btn btn-secondary btn-publicar">Primary</button>
+              <button type="button" class="btn btn-secondary btn-publicar">SALVAR E PUBLICAR</button>
             </div>
           </div>
         </div>
