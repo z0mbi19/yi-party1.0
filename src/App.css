@@ -1,0 +1,222 @@
+body{
+  color: gray;
+}
+
+.page-menu{
+  display: grid;
+  grid-template-columns: 0fr 3fr;
+  grid-template-rows: 6vh 80vh 6vh ;
+  grid-template-areas: "header header"
+                        "menu main"
+                        "menu footer";
+}
+
+.page{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 6vh 80vh 6vh ;
+  grid-template-areas: "header header"
+                        "main main"
+                        "footer footer";
+}
+
+header {
+  background-color: violet;
+  grid-area: header;
+  color: white;
+}
+
+header > nav{
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(101,9,120,1) 35%, rgba(255,0,242,1) 100%);
+  color: white
+}
+
+.icon-menu{
+  color: white;
+  text-decoration: none;
+  padding-left: 10px;
+
+}
+
+
+main{
+  background-color: rgb(235, 235, 235);
+  grid-area: main;
+  display: grid;
+  padding: 10px;
+  grid-template-rows: 45vh 150vh 100vh ;
+  grid-template-areas: " Evento "
+                        " event-data "
+                        "evet-local";
+}
+
+.form-evento{
+  background-color: white;
+  border-radius: 3px;
+  padding-left: 10px;
+  grid-area: Evento;
+}
+
+.form-evento > h1 {
+  float: left;
+  padding-right: 24px;
+  padding-top: 5px;
+}
+
+.form-evento > button{
+  margin-left: 34px;
+  font-size: 12px;
+}
+
+.form-evento-item {
+  font-size: 12px;
+  padding-left: 36px;
+}
+
+.input-form-event{
+  border-radius: 5px;
+  margin-left: 37px;
+  margin-bottom: 10px;
+  width: 90%;
+  border-color: lightgray;
+}
+
+.item-form-event{
+  padding: 22px 1px 10px;
+  font-size: 20px;
+}
+
+.caixa-logo{
+  background-color: lightgray;
+  width: 90%;
+  font-size: 50%;
+  margin-left: 35px;
+  margin-top: 15px;
+  padding: 10px;
+}
+
+.form-data {
+  background-color: white;
+  grid-area: event-data;
+  margin-top: 10px;
+  padding: 10px;
+  color: gray;
+}
+
+.form-data > h1 {
+  float: left;
+  padding-right: 24px;
+}
+
+.form-data > h2 {
+  padding: 15px 15px;
+  font-size: 20px;
+}
+
+.table-form-data{
+  margin-top: 25px;
+  text-align: center;
+}
+
+.table-form-data {
+  
+  border-radius: 5px;
+  
+}
+
+thead th {
+  background-color: #E0E0E0;
+}
+thead th:first-child {
+  border-radius: 10px 0 0 10px;
+}
+thead th:last-child {
+  border-radius: 0 10px 10px 0;
+}
+
+.input-date{
+  border-radius: 10px;
+  width: 100%;
+}
+
+.input-hora{
+  border-radius: 5px;
+  width: 25%;
+}
+
+.input-minuto{
+  border-radius: 5px;
+  width: 25%;
+}
+
+.check-repetir-evento{
+  padding: 10px;
+}
+
+.form-select{
+  width: 30%;
+}
+
+.FormLocal{
+  background-color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  grid-area: evet-local;
+  padding: 10px;
+  color: gray;
+}
+
+.FormLocal > h1 {
+  float: left;
+  padding-right: 24px;
+}
+
+.input-form-loca {
+  margin-top: 10px;
+}
+
+aside{
+  background-color: white;
+  grid-area: menu;
+  text-align: center;
+}
+
+.img-perfil{
+  padding: 20px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.menu-nav{
+  color:gray;
+  text-align: center;
+}
+
+.menu-nav > h4 {
+  color: violet;
+}
+
+.menu-nav > hr {
+  width: 60%;
+  margin-left: 20%;
+}
+
+footer{
+  background-color: white;
+  grid-area: footer;
+}
+
+.btn-vizualizar{
+  background-color: rgba(101,9,120,1);
+}
+
+.btn-rascunho{
+  background-color: rgba(255,0,242,1);
+}
+
+.btn-publicar{
+  
+  background: rgb(2,0,36) !important; 
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(101,9,120,1) 35%, rgba(255,0,242,1) 100%) !important;
+}
